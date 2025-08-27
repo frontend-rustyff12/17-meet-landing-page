@@ -11,6 +11,8 @@
   --slate-300: #d1d1df;
   --white: #fafafa;
 
+  --cyan-600-transparent: hsla(192, 37%, 48%, 0.9);
+
   /* Spacing */
   --sp-1400: 112px;
   --sp-1000: 80px;
@@ -23,6 +25,9 @@
   --sp-200: 16px;
   --sp-100: 8px;
   --sp-50: 4px;
+
+  /* Typography */
+  --ff-red-hat: "Red Hat Display", sans-serif;
 }
 
 *,
@@ -40,37 +45,62 @@ html {
 body {
   min-height: 100dvh;
   background-color: var(--white);
+  font-family: var(--ff-red-hat);
 }
 
 /* Typography */
-.red-hat {
-  font-family: "Red Hat Display", sans-serif;
-}
 
 .red-hat-1 {
-  font-size: 64px;
-  line-height: 110%;
-  letter-spacing: 0px;
-}
-.red-hat-2 {
   font-size: 40px;
   line-height: 110%;
   letter-spacing: 0px;
 }
+.red-hat-2 {
+  font-size: 32px;
+  line-height: 110%;
+  letter-spacing: 0px;
+}
 .red-hat-3 {
-  font-size: 16px;
+  font-size: 12px;
   line-height: 110%;
   letter-spacing: 4px;
 }
 .red-hat-4 {
-  font-size: 18px;
-  line-height: 110%;
+  font-size: 16px;
+  line-height: 150%;
   letter-spacing: 0px;
 }
 .red-hat-5 {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .red-hat-1 {
+    font-size: 48px;
+  }
+  .red-hat-2 {
+    font-size: 36px;
+  }
+  .red-hat-3 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .red-hat-1 {
+    font-size: 64px;
+  }
+  .red-hat-2 {
+    font-size: 40px;
+  }
+  .red-hat-3 {
+    font-size: 16px;
+  }
+  .red-hat-4 {
+    font-size: 18px;
+  }
 }
 
 /* Header */
@@ -83,6 +113,90 @@ header {
 
 header img {
   height: 28px;
+}
+
+/* Footer */
+footer {
+  height: 482px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+}
+
+footer .number-circle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100px;
+  z-index: 10;
+  background-color: var(--white);
+  padding: 1rem;
+  border: 1px solid var(--slate-300);
+  border-radius: 100%;
+  color: var(--slate-600);
+  font-weight: 700;
+}
+
+footer .number-circle::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -100px;
+  width: 1px;
+  height: 100px;
+  background-color: var(--slate-300);
+}
+
+footer .hero {
+  padding: var(--sp-800) var(--sp-400);
+  background: url("/public/mobile/image-footer.jpg") no-repeat center/cover;
+  position: relative;
+}
+
+footer .hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--cyan-600-transparent);
+  z-index: 1;
+}
+
+footer .hero > * {
+  position: relative;
+  z-index: 2;
+}
+
+footer .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--white);
+  gap: var(--sp-300);
+}
+
+footer .content h2 {
+  font-weight: 900;
+}
+
+footer .content p {
+  font-weight: 600;
+}
+
+footer button {
+  border: none;
+  border-radius: 29px;
+  padding: var(--sp-200) var(--sp-500);
+  background-color: var(--purple-600);
+  color: var(--white);
+  width: 196px;
+  font-weight: 700;
 }
 
 @media screen and (min-width: 768px) {
