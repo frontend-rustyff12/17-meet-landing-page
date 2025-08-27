@@ -200,7 +200,21 @@ footer button {
 }
 
 @media screen and (min-width: 768px) {
-  /*  */
+  footer {
+    height: 482px;
+  }
+
+  footer .hero {
+    padding: 64px 132px;
+  }
+
+  footer .number-circle {
+    top: 135px;
+  }
+  footer .number-circle::before {
+    top: -135px;
+    height: 135px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
