@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  /* Colors */
+  --cyan-600: #4d96a9;
+  --cyan-300: #8fe3f9;
+  --purple-600: #855fb1;
+  --purple-300: #d9b8ff;
+  --slate-900: #28283d;
+  --slate-600: #87879d;
+  --slate-300: #d1d1df;
+
+  /* Spacing */
+  --sp-1400: 112px;
+  --sp-1000: 80px;
+  --sp-900: 72px;
+  --sp-800: 64px;
+  --sp-700: 56px;
+  --sp-500: 40px;
+  --sp-400: 32px;
+  --sp-300: 24px;
+  --sp-200: 16px;
+  --sp-100: 8px;
+  --sp-50: 4px;
+}
+
+/* Typography */
+.red-hat {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.red-hat-1 {
+  font-size: 64px;
+  line-height: 110%;
+  letter-spacing: 0px;
+}
+.red-hat-2 {
+  font-size: 40px;
+  line-height: 110%;
+  letter-spacing: 0px;
+}
+.red-hat-3 {
+  font-size: 16px;
+  line-height: 110%;
+  letter-spacing: 4px;
+}
+.red-hat-4 {
+  font-size: 18px;
+  line-height: 110%;
+  letter-spacing: 0px;
+}
+.red-hat-5 {
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
