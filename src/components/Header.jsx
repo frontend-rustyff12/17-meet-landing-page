@@ -1,7 +1,7 @@
 export default function Header() {
   return (
-    <>
-      <h2>Header goes here</h2>
-    </>
+    <header>
+      <img src="/logo.svg" alt="Company logo for meet" />
+    </header>
   );
 }
