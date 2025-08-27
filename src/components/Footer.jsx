@@ -10,7 +10,9 @@ export default function Footer() {
             and group video sessions.
           </p>
 
-          <button className="red-hat-5">Download v1.3</button>
+          <button className="red-hat-5">
+            Download <span>v1.3</span>
+          </button>
         </div>
       </div>
     </footer>

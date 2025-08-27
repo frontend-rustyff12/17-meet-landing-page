@@ -5,6 +5,7 @@
   --cyan-600: #4d96a9;
   --cyan-300: #8fe3f9;
   --purple-600: #855fb1;
+  --purple-600-accent: #b18bdd;
   --purple-300: #d9b8ff;
   --slate-900: #28283d;
   --slate-600: #87879d;
@@ -129,7 +130,7 @@ footer .number-circle {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  top: 100px;
+  top: 80px;
   z-index: 10;
   background-color: var(--white);
   padding: 1rem;
@@ -144,9 +145,9 @@ footer .number-circle::before {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: -100px;
+  top: -80px;
   width: 1px;
-  height: 100px;
+  height: 80px;
   background-color: var(--slate-300);
 }
 
@@ -197,6 +198,17 @@ footer button {
   color: var(--white);
   width: 196px;
   font-weight: 700;
+  transition: background-color 0.7s;
+  cursor: pointer;
+}
+
+footer button span {
+  color: var(--slate-300);
+  font-weight: 600;
+}
+
+footer button:hover {
+  background-color: var(--purple-600-accent);
 }
 
 @media screen and (min-width: 768px) {
@@ -216,9 +228,45 @@ footer button {
     height: 135px;
   }
 }
+@media screen and (min-width: 950px) {
+  footer .number-circle {
+    top: 155px;
+  }
+  footer .number-circle::before {
+    top: -155px;
+    height: 155px;
+  }
+}
 
 @media screen and (min-width: 1440px) {
   header {
     height: 108px;
+  }
+
+  footer .hero {
+    padding: 112px 160px;
+  }
+
+  footer .content {
+    flex-direction: row;
+    align-items: start;
+    text-align: start;
+    justify-content: space-between;
+  }
+
+  footer .content h2 {
+    width: 445px;
+  }
+
+  footer .content p {
+    width: 355px;
+  }
+
+  footer .number-circle {
+    top: 140px;
+  }
+  footer .number-circle::before {
+    top: -140px;
+    height: 140px;
   }
 }
