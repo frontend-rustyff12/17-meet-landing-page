@@ -9,6 +9,7 @@
   --slate-900: #28283d;
   --slate-600: #87879d;
   --slate-300: #d1d1df;
+  --white: #fafafa;
 
   /* Spacing */
   --sp-1400: 112px;
@@ -22,6 +23,23 @@
   --sp-200: 16px;
   --sp-100: 8px;
   --sp-50: 4px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  min-height: 100dvh;
+  background-color: var(--white);
 }
 
 /* Typography */
@@ -53,4 +71,26 @@
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0px;
+}
+
+/* Header */
+header {
+  height: 76px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+header img {
+  height: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  /*  */
+}
+
+@media screen and (min-width: 1440px) {
+  header {
+    height: 108px;
+  }
 }
