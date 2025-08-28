@@ -415,6 +415,20 @@ footer button:hover {
     gap: 1rem;
   }
 
+  /* Main Content */
+  .image-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    gap: 1.5rem;
+  }
+  .image-container img {
+    width: 152px;
+    height: 160px;
+  }
+
+  .main-content .text-container {
+    padding: 4rem 9rem;
+  }
   /* Footer */
   footer {
     height: 482px;
