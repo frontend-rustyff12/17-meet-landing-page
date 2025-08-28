@@ -291,6 +291,41 @@ footer button:hover {
 }
 
 @media screen and (min-width: 768px) {
+  /* Hero */
+  .hero-container {
+    height: 761px;
+  }
+
+  .hero-image-container {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    transform: initial;
+  }
+
+  .hero-image.left,
+  .hero-image.right {
+    display: none;
+  }
+
+  .hero-image.tablet {
+    display: block;
+  }
+
+  .hero-content {
+    margin-top: 4.5rem;
+    margin-inline: 7.1875rem;
+    gap: 1.25rem;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+    justify-content: center;
+
+    gap: 1rem;
+  }
+
+  /* Footer */
   footer {
     height: 482px;
   }
