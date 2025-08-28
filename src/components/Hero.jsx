@@ -1,21 +1,25 @@
 export default function Hero() {
   return (
-    <section className="hero-container">
+    <section
+      className="hero-container"
+      role="banner"
+      aria-label="Main promotional section"
+    >
       <div className="hero-image-container">
         <img
           className="hero-image left"
           src="/desktop/image-hero-left.png"
-          alt="Hero image"
+          alt="Hero promotional image of chat heads"
         />
         <img
           className="hero-image right"
           src="/desktop/image-hero-right.png"
-          alt="Hero image"
+          alt="Hero promotional image of chat heads"
         />
         <img
           className="hero-image tablet"
           src="/tablet/image-hero.png"
-          alt="Hero image"
+          alt="Hero promotional image of chat heads"
         />
       </div>
       <div className="hero-content">

@@ -1,7 +1,9 @@
 export default function Footer() {
   return (
-    <footer>
-      <span className="number-circle red-hat-5">02</span>
+    <footer role="contentinfo" aria-label="Site footer">
+      <span className="number-circle red-hat-5" aria-hidden="true">
+        02
+      </span>
       <div className="hero">
         <div className="content">
           <h2 className="red-hat-2">Experience more together</h2>

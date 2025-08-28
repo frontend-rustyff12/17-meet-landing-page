@@ -6,25 +6,36 @@ export default function MainContent() {
     "man-texting",
   ];
   return (
-    <section className="main-content">
-      <span className="number-circle">01</span>
+    <section
+      className="main-content"
+      role="region"
+      aria-labelledby="main-heading"
+    >
+      <span className="number-circle" aria-hidden="true">
+        01
+      </span>
       <div className="image-container">
         {images.map((item, index) => (
           <img
-            className=""
             key={index}
             src={`/desktop/image-${item}.jpg`}
-            // src="/desktop/image-man-texting.jpg"
-            alt={item.split("-").join("")}
+            alt={`${item[0].slice().toUpperCase()}${item
+              .slice(1)
+              .split("-")
+              .join(" ")}`}
+            aria-hidden="true"
+            loading="lazy"
           />
         ))}
       </div>
       <div className="text-container">
-        <h3 className="red-hat-3">Built for modern use</h3>
+        <h2 className="red-hat-3">Built for modern use</h2>
 
-        <h2 className="red-hat-2">Smarter meetings, all in one place</h2>
+        <h3 id="main-heading" className="red-hat-2">
+          Smarter meetings, all in one place
+        </h3>
 
-        <p className="">
+        <p>
           Send messages, share files, show your screen, and record your meetings
           — all in one workspace. Control who can join with invite-only team
           access, data encryption, and data export.
