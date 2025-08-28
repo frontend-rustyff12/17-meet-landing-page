@@ -46,6 +46,8 @@ body {
   min-height: 100dvh;
   background-color: var(--white);
   font-family: var(--ff-red-hat);
+  /* max-width: 1440px;
+  margin: 0 auto; */
 }
 
 /* Buttons */
