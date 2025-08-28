@@ -35,11 +35,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid red; */
 }
 
 html {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 body {
@@ -55,7 +54,7 @@ button {
   padding: var(--sp-200) var(--sp-500);
   background-color: var(--purple-600);
   color: var(--white);
-  width: 196px;
+  width: 12.25rem;
   font-weight: 700;
   transition: background-color 0.7s;
   cursor: pointer;
@@ -74,72 +73,72 @@ button:hover {
 
 .red-hat-1 {
   font-family: var(--ff-red-hat);
-  font-size: 42px;
+  font-size: 2.625rem;
   line-height: 110%;
   letter-spacing: 0px;
 }
 .red-hat-2 {
   font-family: var(--ff-red-hat);
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 110%;
   letter-spacing: 0px;
 }
 .red-hat-3 {
   font-family: var(--ff-red-hat);
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 110%;
   letter-spacing: 4px;
 }
 .red-hat-4 {
   font-family: var(--ff-red-hat);
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
   letter-spacing: 0px;
 }
 .red-hat-5 {
   font-family: var(--ff-red-hat);
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
   letter-spacing: 0px;
 }
 
 @media screen and (min-width: 768px) {
   .red-hat-1 {
-    font-size: 48px;
+    font-size: 3rem;
   }
   .red-hat-2 {
-    font-size: 36px;
+    font-size: 2.25rem;
   }
   .red-hat-3 {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .red-hat-1 {
-    font-size: 64px;
+    font-size: 4rem;
   }
   .red-hat-2 {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
   .red-hat-3 {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .red-hat-4 {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 }
 
 /* Header */
 header {
-  height: 76px;
+  height: 4.75rem;
   display: flex;
   justify-content: center;
   align-items: end;
 }
 
 header img {
-  height: 28px;
+  height: 1.75rem;
 }
 
 /* Hero */
@@ -149,7 +148,7 @@ header img {
   left: 50%;
   transform: translateX(-50%);
   overflow: hidden;
-  height: 640px;
+  height: 40rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -193,12 +192,11 @@ header img {
   background-color: var(--cyan-600);
 }
 .hero-buttons button:last-of-type {
-  width: 161px;
+  width: 10rem;
 }
 
 /* Main content */
 .main-content {
-  /* border: 1px solid black; */
   position: relative;
   width: 100%;
   left: 50%;
@@ -208,7 +206,7 @@ header img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 200px;
+  padding-top: 12.5rem;
 }
 
 .main-content .number-circle {
@@ -221,12 +219,11 @@ header img {
   background-color: var(--white);
   padding: 0.8rem 1rem;
   border: 1px solid var(--slate-300);
-  /* border: 1px solid black; */
   border-radius: 100%;
   color: var(--slate-600);
   font-weight: 900;
   font-family: var(--ff-red-hat);
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .main-content .number-circle::before {
@@ -251,8 +248,8 @@ header img {
 }
 
 .image-container img {
-  width: 147.5px;
-  height: 144px;
+  width: 9.25rem;
+  height: 9rem;
   border-radius: 10px;
 }
 
@@ -320,6 +317,7 @@ footer .hero {
   padding: var(--sp-800) var(--sp-400);
   background: url("/mobile/image-footer.jpg") no-repeat center/cover;
   position: relative;
+  height: 374px;
 }
 
 footer .hero::before {
@@ -361,7 +359,7 @@ footer button {
   padding: var(--sp-200) var(--sp-500);
   background-color: var(--purple-600);
   color: var(--white);
-  width: 196px;
+  width: 200px;
   font-weight: 700;
   transition: background-color 0.7s;
   cursor: pointer;
@@ -379,7 +377,7 @@ footer button:hover {
 @media screen and (min-width: 768px) {
   /* Hero */
   .hero-container {
-    height: 761px;
+    height: 47.5rem;
   }
 
   .hero-image-container {
@@ -429,14 +427,16 @@ footer button:hover {
   .main-content .text-container {
     padding: 4rem 9rem;
   }
+
   /* Footer */
   footer {
     height: 482px;
   }
 
   footer .hero {
-    padding: 64px 132px;
+    padding: 4rem 8.25rem;
     background: url("/tablet/image-footer.jpg") no-repeat center/cover;
+    height: 320px;
   }
 
   footer .number-circle {
@@ -447,17 +447,9 @@ footer button:hover {
     height: 135px;
   }
 }
-@media screen and (min-width: 950px) {
-  footer .number-circle {
-    top: 155px;
-  }
-  footer .number-circle::before {
-    top: -155px;
-    height: 155px;
-  }
-}
 
 @media screen and (min-width: 1200px) {
+  /* Header */
   header {
     height: 108px;
   }
@@ -536,6 +528,7 @@ footer button:hover {
     align-items: start;
     text-align: start;
     justify-content: space-between;
+    gap: var(--sp-300);
   }
 
   footer .content h2 {
@@ -552,5 +545,19 @@ footer button:hover {
   footer .number-circle::before {
     top: -140px;
     height: 140px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* Main Wrapper */
+  .main-wrapper {
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+
+  /* Footer */
+  footer .content {
+    margin: 0 auto;
+    max-width: 1200px;
   }
 }
