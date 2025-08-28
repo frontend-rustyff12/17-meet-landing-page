@@ -35,7 +35,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid red; */
 }
 
 html {
@@ -152,6 +151,7 @@ header img {
   height: 640px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .hero-image-container {
@@ -314,14 +314,18 @@ footer button:hover {
 
   .hero-content {
     margin-top: 4.5rem;
-    margin-inline: 7.1875rem;
+    margin-inline: 7.5rem;
     gap: 1.25rem;
+    width: 446.3px;
+  }
+
+  .hero-content h1 {
+    padding-inline: 3rem;
   }
 
   .hero-buttons {
     flex-direction: row;
     justify-content: center;
-
     gap: 1rem;
   }
 
@@ -353,11 +357,59 @@ footer button:hover {
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
   header {
     height: 108px;
   }
 
+  /* Hero */
+  .hero-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 360px;
+    height: 448px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-image-container {
+    display: contents;
+  }
+
+  .hero-image.tablet {
+    display: none;
+  }
+
+  .hero-image.left {
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    align-self: start;
+    justify-self: start;
+  }
+
+  .hero-image.right {
+    display: block;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    align-self: end;
+    justify-self: end;
+  }
+
+  .hero-content {
+    grid-row: 1;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 0rem;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .hero-content h1 {
+    padding-inline: 0rem;
+  }
+
+  /* Footer */
   footer .hero {
     padding: 112px 160px;
     background: url("/desktop/image-footer.jpg") no-repeat center/cover;
