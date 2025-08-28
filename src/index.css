@@ -68,7 +68,6 @@ button span {
 button:hover {
   background-color: var(--purple-600-accent);
 }
-
 /* Typography */
 
 .red-hat-1 {
@@ -191,10 +190,14 @@ header img {
 .hero-buttons button:first-of-type {
   background-color: var(--cyan-600);
 }
+
 .hero-buttons button:last-of-type {
   width: 10rem;
 }
 
+.hero-buttons button:first-of-type:hover {
+  background-color: var(--cyan-300);
+}
 /* Main content */
 .main-content {
   position: relative;
