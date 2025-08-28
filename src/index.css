@@ -509,6 +509,22 @@ footer button:hover {
     padding-inline: 0rem;
   }
 
+  /* Main Content */
+
+  .image-container {
+    gap: 2rem;
+  }
+
+  .image-container img {
+    width: 256px;
+    height: 256px;
+  }
+
+  .main-content .text-container {
+    width: 544px;
+    padding-inline: 2rem;
+  }
+
   /* Footer */
   footer .hero {
     padding: 112px 160px;
