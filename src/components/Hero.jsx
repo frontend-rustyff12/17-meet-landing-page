@@ -1,7 +1,36 @@
 export default function Hero() {
   return (
-    <>
-      <h2>Hero goes here</h2>
-    </>
+    <section className="hero-container">
+      <div className="hero-image-container">
+        <img
+          className="hero-image left"
+          src="/desktop/image-hero-left.png"
+          alt="Hero image"
+        />
+        <img
+          className="hero-image right"
+          src="/desktop/image-hero-right.png"
+          alt="Hero image"
+        />
+        <img
+          className="hero-image tablet"
+          src="/tablet/image-hero.png"
+          alt="Hero image"
+        />
+      </div>
+      <div className="hero-content">
+        <h1 className="red-hat-1">Group Chat for Everyone</h1>
+        <p className="red-hat-4">
+          Meet makes it easy to connect with others face-to-face virtually and
+          collaborate across any device.
+        </p>
+        <div className="hero-buttons">
+          <button className="red-hat-5">
+            Download <span>v1.3</span>
+          </button>
+          <button className="red-hat-5">What is it?</button>
+        </div>
+      </div>
+    </section>
   );
 }
